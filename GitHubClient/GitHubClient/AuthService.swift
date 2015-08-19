@@ -9,9 +9,9 @@
 import UIKit
 
 class AuthService {
-  class func performInitialRequest() {
-    UIApplication.sharedApplication().openURL(NSURL(string: "https://github.com/login/oauth/authorize?client_id=\(kClientID)&redirect_uri=GitHubCient://oauth&scope=user,repo")!)
-  }
+//  class func performInitialRequest() {
+//    UIApplication.sharedApplication().openURL(NSURL(string: "https://github.com/login/oauth/authorize?client_id=\(kClientID)&redirect_uri=GitHubCient://oauth&scope=user,repo")!)
+//  }
   /*
   class func exchangeCodeInURL(codeURL : NSURL) {
     let code = codeURL.query {

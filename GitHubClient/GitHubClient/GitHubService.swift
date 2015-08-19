@@ -21,9 +21,10 @@ class GitHubService {
           println(httpResponse)
           switch httpResponse.statusCode {
           case 200...299:
-            let repos = RepoJSONParser.reposFromJSONData(data)
-            completionHandler(nil, repos)
-            println("there are \(repos!.count) repos")
+            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+              let repos = RepoJSONParser.reposFromJSONData(data)
+              completionHandler(nil, repos)
+            })
           case 400...499:
             println("it's our fault")
             completionHandler("it's our fault", nil)

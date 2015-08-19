@@ -11,17 +11,28 @@ import UIKit
 class RepoSearchViewController: UIViewController {
   
   @IBOutlet weak var searchBar: UISearchBar!
+  
+  @IBOutlet weak var tableView: UITableView!
+
+  var repoSearchResults = [Repo]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      tableView.dataSource = self
+      tableView.delegate = self
         searchBar.delegate = self
         // Do any additional setup after loading the view.
+      
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+  
+  override func viewWillAppear(animated: Bool) {
+    tableView.reloadData()
+  }
     
 
     /*
@@ -40,7 +51,42 @@ class RepoSearchViewController: UIViewController {
 extension RepoSearchViewController: UISearchBarDelegate {
   func searchBarSearchButtonClicked(searchBar: UISearchBar) {
     GitHubService.repositoriesForSearchTerm(searchBar.text, completionHandler: { (error, repos) -> (Void) in
-      println("completion handler whatever you want to put in there")
+      
+      if let error = error {
+        //handle error
+      } else {
+        self.repoSearchResults = repos!
+        println("there are \(self.repoSearchResults.count) here")
+        self.tableView.reloadData()
+      }
     })
   }
+}
+
+//MARK: - 
+extension RepoSearchViewController: UITableViewDataSource {
+  
+  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    return repoSearchResults.count
+  }
+  
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCellWithIdentifier("repoCell", forIndexPath: indexPath) as! RepoCell
+    
+    cell.repoNameLabel.text = repoSearchResults[indexPath.row].repoName
+    cell.languageLabel.text = repoSearchResults[indexPath.row].language
+    cell.descriptionLabel.text = repoSearchResults[indexPath.row].repoDescription
+    cell.createdAtLabel.text = repoSearchResults[indexPath.row].createdAt
+    cell.updatedAtLabel.text = repoSearchResults[indexPath.row].updatedAt
+    cell.createdByLabel.text = repoSearchResults[indexPath.row].ownerLogin
+    
+    return cell
+  }
+  
+}
+
+//MARK: - 
+extension RepoSearchViewController: UITableViewDelegate {
+  
 }

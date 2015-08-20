@@ -21,6 +21,10 @@
 		346EEBB91B83D37C004F49CF /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EEBB81B83D37C004F49CF /* Keys.swift */; };
 		346EEBBB1B83EC11004F49CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EEBBA1B83EC11004F49CF /* LoginViewController.swift */; };
 		34D7C4C01B84F74C005C16EE /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7C4BF1B84F74C005C16EE /* RepoCell.swift */; };
+		34D7C4C61B855822005C16EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7C4C51B855822005C16EE /* User.swift */; };
+		34D7C4C81B8558E0005C16EE /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7C4C71B8558E0005C16EE /* KeychainService.swift */; };
+		34D7C4CA1B855933005C16EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7C4C91B855933005C16EE /* Constants.swift */; };
+		34D7C4CC1B85599A005C16EE /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7C4CB1B85599A005C16EE /* UserSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		346EEBB81B83D37C004F49CF /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		346EEBBA1B83EC11004F49CF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		34D7C4BF1B84F74C005C16EE /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		34D7C4C51B855822005C16EE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		34D7C4C71B8558E0005C16EE /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		34D7C4C91B855933005C16EE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		34D7C4CB1B85599A005C16EE /* UserSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +141,11 @@
 			isa = PBXGroup;
 			children = (
 				346EEBB21B83BBAF004F49CF /* Repo.swift */,
+				34D7C4C51B855822005C16EE /* User.swift */,
 				341369521B8287B0005A4087 /* GitHubService.swift */,
 				346EEBB61B83D22B004F49CF /* AuthService.swift */,
+				34D7C4C91B855933005C16EE /* Constants.swift */,
+				34D7C4C71B8558E0005C16EE /* KeychainService.swift */,
 				346EEBB81B83D37C004F49CF /* Keys.swift */,
 				346EEBB41B83BE16004F49CF /* RepoJSONParser.swift */,
 			);
@@ -144,8 +155,9 @@
 		346EEBAE1B839C2B004F49CF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				341369541B828C5B005A4087 /* RepoSearchViewController.swift */,
 				346EEBBA1B83EC11004F49CF /* LoginViewController.swift */,
+				341369541B828C5B005A4087 /* RepoSearchViewController.swift */,
+				34D7C4CB1B85599A005C16EE /* UserSearchViewController.swift */,
 				3413694F1B8278C0005A4087 /* MenuTableViewController.swift */,
 			);
 			name = Controllers;
@@ -266,8 +278,12 @@
 				341369551B828C5B005A4087 /* RepoSearchViewController.swift in Sources */,
 				341369301B827817005A4087 /* AppDelegate.swift in Sources */,
 				34D7C4C01B84F74C005C16EE /* RepoCell.swift in Sources */,
+				34D7C4C81B8558E0005C16EE /* KeychainService.swift in Sources */,
 				346EEBB31B83BBAF004F49CF /* Repo.swift in Sources */,
+				34D7C4C61B855822005C16EE /* User.swift in Sources */,
+				34D7C4CC1B85599A005C16EE /* UserSearchViewController.swift in Sources */,
 				341369531B8287B0005A4087 /* GitHubService.swift in Sources */,
+				34D7C4CA1B855933005C16EE /* Constants.swift in Sources */,
 				341369501B8278C0005A4087 /* MenuTableViewController.swift in Sources */,
 				346EEBB71B83D22B004F49CF /* AuthService.swift in Sources */,
 			);

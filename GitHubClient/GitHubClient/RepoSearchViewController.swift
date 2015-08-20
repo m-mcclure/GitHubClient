@@ -18,6 +18,8 @@ class RepoSearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      tableView.estimatedRowHeight = 90
+      tableView.rowHeight = UITableViewAutomaticDimension
       tableView.dataSource = self
       tableView.delegate = self
         searchBar.delegate = self
@@ -77,9 +79,33 @@ extension RepoSearchViewController: UITableViewDataSource {
     cell.repoNameLabel.text = repoSearchResults[indexPath.row].repoName
     cell.languageLabel.text = repoSearchResults[indexPath.row].language
     cell.descriptionLabel.text = repoSearchResults[indexPath.row].repoDescription
-    cell.createdAtLabel.text = repoSearchResults[indexPath.row].createdAt
-    cell.updatedAtLabel.text = repoSearchResults[indexPath.row].updatedAt
-    cell.createdByLabel.text = repoSearchResults[indexPath.row].ownerLogin
+    
+    /***CONVERT FROM NSDate to String ****/
+    //let date = repoSearchResults[indexPath.row].createdAt //get the time, in this case the time an object was created.
+    //format date
+    //var dateFormatter = NSDateFormatter()
+    //dateFormatter.dateFormat = "dd MMM YYYY" //format style. Browse online to get a format that fits your needs.
+    //var dateString = dateFormatter.dateFromString(date)
+    
+//    var dateFormatter = NSDateFormatter()
+//    dateFormatter.dateFormat = "yyyy-MM-dd"
+    
+    //var date = dateFormatter.dateFromString(dateString)
+    //println(date)
+    
+    //cell.createdAtLabel.text = dateFormatter.dateFromString(date)
+    //cell.updatedAtLabel.text = repoSearchResults[indexPath.row].updatedAt
+//    func truncatedDateString(dateString: String) -> String {
+//      var stringAsArray : [String]()
+//      var i : Int
+//      for (i = 10; i > 0; i--){
+//        stringAsArray.append(dateString[i])
+//      }
+//      var stringToReturn = String(stringAsArray)
+      
+//      return stringToReturn
+//    }
+    cell.createdByLabel.text = "Created by: \(repoSearchResults[indexPath.row].ownerLogin)"
     
     return cell
   }

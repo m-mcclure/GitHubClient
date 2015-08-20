@@ -17,11 +17,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
     
-    //if let token = KeychainService
+    if let token = KeychainService.loadToken() {
+      
+    } else {
+      let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+      if let loginVC = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as? LoginViewController {
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = loginVC
+      }
+    }
     return true
   }
   
   //func application(application: UIApplication, didFinish
+  func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+    println(url)
+    //AuthService.exchangeCodeInURL(url)
+    return true
+  }
 
   func applicationWillResignActive(application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

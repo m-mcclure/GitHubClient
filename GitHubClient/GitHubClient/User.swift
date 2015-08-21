@@ -6,10 +6,11 @@
 //  Copyright (c) 2015 Matthew McClure. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct User {
   let login : String
   let avatarURL : String
-  let id : Int 
+  let id : Int
+  var userImage : UIImage?
 }

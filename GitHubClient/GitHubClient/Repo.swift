@@ -12,7 +12,6 @@ struct Repo {
   let repoName : String
   let ownerLogin : String
   let ownerAvatarURL : String?
-  let ownerGravatarID : String
   let repoDescription : String
   let createdAt : String
   let updatedAt : String

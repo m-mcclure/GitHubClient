@@ -12,6 +12,12 @@ class MenuTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      if let token = KeychainService.loadToken() {
+        println(token)
+      } else {
+        AuthService.performInitialRequest()
+      }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

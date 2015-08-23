@@ -13,4 +13,5 @@ struct User {
   let avatarURL : String
   let id : Int
   var userImage : UIImage?
+  
 }

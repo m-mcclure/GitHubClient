@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340240171B8A3D5F003BCF74 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340240161B8A3D5F003BCF74 /* UserDetailViewController.swift */; };
 		341369301B827817005A4087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413692F1B827817005A4087 /* AppDelegate.swift */; };
 		341369351B827817005A4087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341369331B827817005A4087 /* Main.storyboard */; };
 		341369371B827817005A4087 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 341369361B827817005A4087 /* Images.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340240161B8A3D5F003BCF74 /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		3413692A1B827817005A4087 /* GitHubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3413692E1B827817005A4087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3413692F1B827817005A4087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				346EEBBA1B83EC11004F49CF /* LoginViewController.swift */,
 				341369541B828C5B005A4087 /* RepoSearchViewController.swift */,
 				34D7C4CB1B85599A005C16EE /* UserSearchViewController.swift */,
+				340240161B8A3D5F003BCF74 /* UserDetailViewController.swift */,
 				3413694F1B8278C0005A4087 /* MenuTableViewController.swift */,
 			);
 			name = Controllers;
@@ -300,6 +303,7 @@
 				34B21E981B866B4B006CB223 /* ImageService.swift in Sources */,
 				34D7C4CA1B855933005C16EE /* Constants.swift in Sources */,
 				341369501B8278C0005A4087 /* MenuTableViewController.swift in Sources */,
+				340240171B8A3D5F003BCF74 /* UserDetailViewController.swift in Sources */,
 				3463774F1B8786F400605293 /* ImageResizer.swift in Sources */,
 				346EEBB71B83D22B004F49CF /* AuthService.swift in Sources */,
 			);

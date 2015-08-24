@@ -9,11 +9,12 @@
 import Foundation
 
 struct Repo {
-  let repoName : String
-  let ownerLogin : String
-  let ownerAvatarURL : String?
-  let repoDescription : String
-  let createdAt : String
-  let updatedAt : String
-  let language : String 
+  let repoName: String
+  let ownerLogin: String
+  let ownerAvatarURL: String?
+  let repoDescription: String
+  let createdAt: String
+  let updatedAt: String
+  let language: String
+  let htmlURL: String
 }

@@ -247,6 +247,7 @@
                                             <outlet property="languageLabel" destination="UEw-2U-2k2" id="aGY-0J-gS7"/>
                                             <outlet property="repoNameLabel" destination="68S-l1-w3h" id="dy4-Uh-Zth"/>
                                             <outlet property="updatedAtLabel" destination="JWa-kv-o6H" id="Ai3-3D-v8p"/>
+                                            <segue destination="ofS-1d-yL9" kind="show" id="BWZ-4l-E4D"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -481,6 +482,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhw-Xl-8oH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2428" y="772"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="wxR-Q1-yCb">
+            <objects>
+                <viewController id="ofS-1d-yL9" customClass="WebViewController" customModule="GitHubClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XeR-5c-6ny"/>
+                        <viewControllerLayoutGuide type="bottom" id="efD-xt-pBT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ggt-Be-hJW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tru-fm-eup" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2428" y="12"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bZ4-BI-Aiv">

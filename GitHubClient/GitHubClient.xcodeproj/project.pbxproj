@@ -10,6 +10,7 @@
 		340240171B8A3D5F003BCF74 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340240161B8A3D5F003BCF74 /* UserDetailViewController.swift */; };
 		340240191B8A468F003BCF74 /* ToUserDetailAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340240181B8A468F003BCF74 /* ToUserDetailAnimationController.swift */; };
 		3402401B1B8A8E80003BCF74 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402401A1B8A8E80003BCF74 /* WebViewController.swift */; };
+		3402401D1B8A9A8B003BCF74 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402401C1B8A9A8B003BCF74 /* Extensions.swift */; };
 		341369301B827817005A4087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413692F1B827817005A4087 /* AppDelegate.swift */; };
 		341369351B827817005A4087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341369331B827817005A4087 /* Main.storyboard */; };
 		341369371B827817005A4087 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 341369361B827817005A4087 /* Images.xcassets */; };
@@ -48,6 +49,7 @@
 		340240161B8A3D5F003BCF74 /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		340240181B8A468F003BCF74 /* ToUserDetailAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToUserDetailAnimationController.swift; sourceTree = "<group>"; };
 		3402401A1B8A8E80003BCF74 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		3402401C1B8A9A8B003BCF74 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3413692A1B827817005A4087 /* GitHubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3413692E1B827817005A4087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3413692F1B827817005A4087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				341369541B828C5B005A4087 /* RepoSearchViewController.swift */,
 				3402401A1B8A8E80003BCF74 /* WebViewController.swift */,
 				34D7C4CB1B85599A005C16EE /* UserSearchViewController.swift */,
+				3402401C1B8A9A8B003BCF74 /* Extensions.swift */,
 				340240181B8A468F003BCF74 /* ToUserDetailAnimationController.swift */,
 				340240161B8A3D5F003BCF74 /* UserDetailViewController.swift */,
 				3413694F1B8278C0005A4087 /* MenuTableViewController.swift */,
@@ -302,6 +305,7 @@
 				34B21E961B866143006CB223 /* UserJSONParser.swift in Sources */,
 				34D7C4C01B84F74C005C16EE /* RepoCell.swift in Sources */,
 				34D7C4C81B8558E0005C16EE /* KeychainService.swift in Sources */,
+				3402401D1B8A9A8B003BCF74 /* Extensions.swift in Sources */,
 				346EEBB31B83BBAF004F49CF /* Repo.swift in Sources */,
 				340240191B8A468F003BCF74 /* ToUserDetailAnimationController.swift in Sources */,
 				34B21E941B865CCA006CB223 /* UserCell.swift in Sources */,

@@ -94,6 +94,7 @@ extension UserSearchViewController: UICollectionViewDataSource {
     return cell
   }
   
+  
 }
 
 //MARK: - UISearchBarDelegate
@@ -109,5 +110,11 @@ extension UserSearchViewController: UISearchBarDelegate {
         self.collectionView.reloadData()
       }
     })
+  }
+  
+  func searchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    
+    return text.validateStringForURL()
+    
   }
 }

@@ -65,6 +65,12 @@ extension RepoSearchViewController: UISearchBarDelegate {
       }
     })
   }
+  
+  func searchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    
+    return text.validateStringForURL()
+    
+  }
 }
 
 //MARK: - 

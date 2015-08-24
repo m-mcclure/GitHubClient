@@ -11,8 +11,7 @@ import WebKit
 
 class WebViewController: UIViewController {
   
- 
-  var passedURL: String! 
+  var passedURL: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,6 +11,7 @@
 		340240191B8A468F003BCF74 /* ToUserDetailAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340240181B8A468F003BCF74 /* ToUserDetailAnimationController.swift */; };
 		3402401B1B8A8E80003BCF74 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402401A1B8A8E80003BCF74 /* WebViewController.swift */; };
 		3402401D1B8A9A8B003BCF74 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402401C1B8A9A8B003BCF74 /* Extensions.swift */; };
+		340240231B8AA135003BCF74 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340240221B8AA135003BCF74 /* MyProfileViewController.swift */; };
 		341369301B827817005A4087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413692F1B827817005A4087 /* AppDelegate.swift */; };
 		341369351B827817005A4087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341369331B827817005A4087 /* Main.storyboard */; };
 		341369371B827817005A4087 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 341369361B827817005A4087 /* Images.xcassets */; };
@@ -50,6 +51,7 @@
 		340240181B8A468F003BCF74 /* ToUserDetailAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToUserDetailAnimationController.swift; sourceTree = "<group>"; };
 		3402401A1B8A8E80003BCF74 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3402401C1B8A9A8B003BCF74 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		340240221B8AA135003BCF74 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		3413692A1B827817005A4087 /* GitHubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3413692E1B827817005A4087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3413692F1B827817005A4087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				341369541B828C5B005A4087 /* RepoSearchViewController.swift */,
 				3402401A1B8A8E80003BCF74 /* WebViewController.swift */,
 				34D7C4CB1B85599A005C16EE /* UserSearchViewController.swift */,
+				340240221B8AA135003BCF74 /* MyProfileViewController.swift */,
 				3402401C1B8A9A8B003BCF74 /* Extensions.swift */,
 				340240181B8A468F003BCF74 /* ToUserDetailAnimationController.swift */,
 				340240161B8A3D5F003BCF74 /* UserDetailViewController.swift */,
@@ -314,6 +317,7 @@
 				341369531B8287B0005A4087 /* GitHubService.swift in Sources */,
 				34B21E981B866B4B006CB223 /* ImageService.swift in Sources */,
 				34D7C4CA1B855933005C16EE /* Constants.swift in Sources */,
+				340240231B8AA135003BCF74 /* MyProfileViewController.swift in Sources */,
 				341369501B8278C0005A4087 /* MenuTableViewController.swift in Sources */,
 				340240171B8A3D5F003BCF74 /* UserDetailViewController.swift in Sources */,
 				3463774F1B8786F400605293 /* ImageResizer.swift in Sources */,
